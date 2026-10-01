@@ -54,10 +54,10 @@ html, body {
 .tl { pointer-events: none; color: var(--fg); }
 .hot {
   position: absolute;
-  width: 9px;
-  height: 9px;
+  width: 20px;
+  height: 20px;
   padding: 0;
-  margin: 0;
+  margin: -10px 0 0 -10px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -99,7 +99,7 @@ textarea { min-height: 140px; resize: vertical; }
 
 .opt { position: relative; padding: 2px 24px 2px 4px; color: var(--fg2); }
 .opt.on { color: #484848; }
-.opt .hot { right: 2px; top: 50%; margin-top: -4px; }
+.opt .hot { right: 2px; left: auto; top: 50%; margin: -10px 0 0 0; }
 
 .note { color: var(--fg2); font-size: 14px; }
 .angel { color: #444; font-size: 24px; margin: 10px 0 2px; }
@@ -111,7 +111,7 @@ textarea { min-height: 140px; resize: vertical; }
 .lines i:nth-child(1) { top: 3px; }
 .lines i:nth-child(2) { top: 9px; }
 .lines i:nth-child(3) { top: 15px; }
-.lines .hot { right: 4px; top: 5px; }
+.lines .hot { left: auto; right: 0; top: 50%; margin: -10px 0 0 0; }
 .filter input { margin: 0; width: 120px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 4px 14px; }
 .exp { position: relative; padding: 8px 4px; color: var(--fg2); }
